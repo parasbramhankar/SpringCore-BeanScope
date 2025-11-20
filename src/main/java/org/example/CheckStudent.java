@@ -1,20 +1,12 @@
 package org.example;
 
-public class CheckStudent {
 
-    Student student;
+import java.util.Scanner;
 
-    CheckStudent(Student student){
-        this.student=student;
-    }
+public class CheckStudent implements Student{
 
-    void display(){
-        char ch= student.gender();
-
-        if(ch=='F'){
-            System.out.println("This is the female student");
-        }else{
-            System.out.println("This is the male student");
-        }
+    @Override
+     public char gender(){
+        return 'F';
     }
 }
