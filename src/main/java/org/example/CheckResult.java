@@ -3,8 +3,6 @@ package org.example;
 import java.util.Scanner;
 
 public class CheckResult implements Result {
-
-
     @Override
     public int[] marks(){
         Scanner scanner=new Scanner(System.in);
@@ -17,4 +15,3 @@ public class CheckResult implements Result {
         return arr;
     }
 }
-
