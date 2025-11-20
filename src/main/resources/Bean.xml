@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Step 1: Root tag for Spring configuration -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Step 2: Define your beans here -->
+
+<!--    For MaleStudent class -->
+    <bean id="male" class="org.example.CheckResult"/>
+
+<!--    For FemaleStudent class -->
+    <bean id="female" class="org.example.CheckStudent"/>
+
+    <!-- Step 3: Inject dependency -->
+<!--    calling male and female class-->
+    <bean id="checkStudent" class="org.example.ViewResult">
+        <constructor-arg ref="male"/>
+        <constructor-arg ref="female"/>
+    </bean>
+    
+    <bean id="checkResult" class="org.example.ViewResult">
+        <property name="result" ref="male"/>
+    </bean>
+
+</beans>
