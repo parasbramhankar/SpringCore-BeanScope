@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("Bean.xml");
         ViewStudent student = context.getBean(ViewStudent.class);
         student.displayStudent();
 
