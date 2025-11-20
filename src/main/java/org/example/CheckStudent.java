@@ -7,6 +7,8 @@ public class CheckStudent implements Student{
 
     @Override
      public char gender(){
-        return 'F';
+        System.out.println("Enter the Gender (F:Female/ M:Male):");
+        return new Scanner(System.in).next().charAt(0);
     }
+
 }
