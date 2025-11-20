@@ -6,7 +6,7 @@ public class ViewResult {
 
     Result result;
 
-    void setStudent(Result result){
+    void setResult(Result result){
         this.result=result;
     }
 
