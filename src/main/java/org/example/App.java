@@ -11,6 +11,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext applicationContext=new ClassPathXmlApplicationContext();
+        ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
+        ViewStudent student = context.getBean(ViewStudent.class);
+        student.displayStudent();
+
+
     }
 }
