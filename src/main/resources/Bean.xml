@@ -9,20 +9,20 @@
 
     <!-- Step 2: Define your beans here -->
 
-<!--    For MaleStudent class -->
-    <bean id="result" class="org.example.CheckResult"/>
+<!--    For result class -->
+    <bean id="res" class="org.example.CheckResult"/>
 
-<!--    For FemaleStudent class -->
+<!--    For student class -->
     <bean id="student" class="org.example.CheckStudent"/>
 
     <!-- Step 3: Inject dependency -->
-<!--    calling male and female class-->
+<!--    Constructor injection for ViewStudent-->
     <bean id="checkStudent" class="org.example.ViewStudent">
         <constructor-arg ref="student"/>
     </bean>
 
-    <bean id="checkResult" class="org.example.CheckResult">
-        <property name="result" ref="result"/>
+    <bean id="checkResult" class="org.example.ViewResult">
+        <property name="result" ref="res"/>
     </bean>
 
 </beans>
