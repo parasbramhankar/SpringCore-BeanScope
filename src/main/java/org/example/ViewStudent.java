@@ -8,13 +8,15 @@ public class ViewStudent {
         this.student=student;
     }
 
-    void display(){
+    void displayStudent(){
         char ch= student.gender();
 
-        if(ch=='F'){
+        if(ch=='F' || ch=='f'){
             System.out.println("This is the female student");
-        }else{
+        }else if (ch=='M' || ch=='m'){
             System.out.println("This is the male student");
+        }else{
+            System.out.println("This is third gender student");
         }
     }
 }
