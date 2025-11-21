@@ -15,6 +15,8 @@ public class App
         ViewStudent student = context.getBean(ViewStudent.class);
         student.displayStudent();
 
+        ViewResult result=context.getBean(ViewResult.class);
+        result.displayResult();
 
     }
 }
