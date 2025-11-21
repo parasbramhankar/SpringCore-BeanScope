@@ -17,7 +17,7 @@
 
     <!-- Step 3: Inject dependency -->
 <!--    Constructor injection for ViewStudent-->
-    <bean id="viewstudent" class="org.example.ViewStudent">
+    <bean id="viewstudent" class="org.example.ViewStudent" scope="prototype">
         <constructor-arg ref="student"/>
     </bean>
 
