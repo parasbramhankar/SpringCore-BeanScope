@@ -17,11 +17,12 @@
 
     <!-- Step 3: Inject dependency -->
 <!--    Constructor injection for ViewStudent-->
-    <bean id="checkStudent" class="org.example.ViewStudent">
+    <bean id="viewstudent" class="org.example.ViewStudent">
         <constructor-arg ref="student"/>
     </bean>
 
-    <bean id="checkResult" class="org.example.ViewResult">
+
+    <bean id="viewresult" class="org.example.ViewResult">
         <property name="result" ref="res"/>
     </bean>
 
