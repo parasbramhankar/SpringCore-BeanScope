@@ -11,6 +11,7 @@ public class ViewStudent {
     void displayStudent(){
         char ch= student.gender();
 
+
         if(ch=='F' || ch=='f'){
             System.out.println("This is the female student");
         }else if (ch=='M' || ch=='m'){
